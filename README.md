@@ -1,6 +1,6 @@
 # Fraud Detection
 
-###Consider the following credit card fraud detection algorithm:
+### Consider the following credit card fraud detection algorithm:
 - A credit card transaction is comprised of the following elements; 
   1) hashed credit card number 
   2) timestamp - of format 'year-month-dayThour:minute:second' 
@@ -11,7 +11,7 @@
 
 # Solution
 ## Desgin
-### Accumulate the price based on the HPan (hashed PAN) and a given day, and return a list of HPANs whose sum price exceed the given amount (T).
+Accumulate the price based on the HPan (hashed PAN) and a given day, and return a list of HPANs whose sum price exceed the given amount (T).
 
 ## Runtime Environment
 ### JDK 1.5 +
