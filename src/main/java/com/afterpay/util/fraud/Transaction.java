@@ -1,5 +1,6 @@
 package com.afterpay.util.fraud;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Transaction {
@@ -19,7 +20,7 @@ public class Transaction {
         }
 
         hPan = list[0].trim();
-        dateTime = FraudDetector.yyyy_MM_ddTHHmmss.parse(list[1].trim());
+        dateTime = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss").parse(list[1].trim());
         price = Double.parseDouble(list[2].trim());
     }
 
@@ -28,7 +29,7 @@ public class Transaction {
     }
 
     public String getDate() {
-        return FraudDetector.yyyy_MM_dd.format(dateTime);
+        return new SimpleDateFormat("yyyy-MM-dd").format(dateTime);
     }
 
     public double getPrice() {

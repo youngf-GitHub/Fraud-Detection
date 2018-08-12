@@ -7,9 +7,6 @@ import java.util.Map;
 
 public final class FraudDetector {
 
-	public static final SimpleDateFormat yyyy_MM_ddTHHmmss = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-	public static final SimpleDateFormat yyyy_MM_dd = new SimpleDateFormat("yyyy-MM-dd");
-
 	/**
 	 * 
 	 * @param list
@@ -21,6 +18,8 @@ public final class FraudDetector {
 	 * @throws Exception
 	 */
     public static String[] detect(String[] list, String day, double T) throws Exception {
+
+    	final SimpleDateFormat yyyy_MM_dd = new SimpleDateFormat("yyyy-MM-dd");
 
     	day = yyyy_MM_dd.format(yyyy_MM_dd.parse(day));
 
