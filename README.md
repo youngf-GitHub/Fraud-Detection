@@ -1,4 +1,4 @@
-#Fraud Detection
+# Fraud Detection
 
 ###Consider the following credit card fraud detection algorithm:
 - A credit card transaction is comprised of the following elements; 
@@ -9,9 +9,9 @@
 - A credit card will be identified as fraudulent if the sum of prices for a unique hashed credit card number, for a given day, exceeds the price threshold T. 
 ###Write a method on a class, which, when given a list transactions, a date and a price threshold T, returns a list of hashed credit card numbers that have been identified as fraudulent for that day. Feel free to create any additional classes you need to support the design of your solution. 
 
-#Solution
-##Desgin
-###Accumulate the price based on the HPan (hashed PAN) and a given day, and return a list of HPANs whose sum price exceed the given amount (T).
+# Solution
+## Desgin
+### Accumulate the price based on the HPan (hashed PAN) and a given day, and return a list of HPANs whose sum price exceed the given amount (T).
 
-##Runtime Environment
-###JDK 1.5 +
+## Runtime Environment
+### JDK 1.5 +
